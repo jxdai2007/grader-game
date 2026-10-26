@@ -160,7 +160,7 @@ This is one abliterated model in one small synthetic game. A non-abliterated Qwe
 
 ## Code and Data
 
-The code isn't public yet, it will be released after review. If you want it, you can ask the author. Both games run as Inspect tasks, and the data is transcripts of the grader-game with per-answer labeling and transcripts of the password-game with leak labeling.
+Code and result tables can be found at https://github.com/jxdai2007/grader-game under the MIT license. Both games are implemented as Inspect tasks. The full raw game transcripts (with per-answer labels for the Grader Game and leak labels for the Password Relay Game) are not in the repository and can be requested from the author.
 
 ```text
 uv run inspect eval gradergame/task.py -T manifest=<csv>
