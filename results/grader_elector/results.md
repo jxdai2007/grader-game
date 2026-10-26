@@ -1,4 +1,4 @@
-# Grader Game results from /Users/macstudio/projects/ApartSprint/logs/grader_elector@/Users/macstudio/projects/ApartSprint-g3/docs/preregistration-grader-addendum2.md
+# Grader Game results from logs/grader_elector@../docs/preregistration-grader-addendum2.md
 
 games=10 discarded=0 rejected=0
 
