@@ -1,4 +1,4 @@
-# When Do AI Graders Collude? Seats, Talk and Spot Audits in an Exact-Label Peer-Grading Game
+# Collusion Needs Power, Not Privacy: Lessons for Overseeing AI Agents
 
 Jollen Dai — Independent — with Apart Research
 

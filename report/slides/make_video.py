@@ -16,7 +16,7 @@ for i in range(1, 10):
                     "-vf", "scale=1920:1080", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "2", str(out)], check=True)
     lst.append(f"file '{out}'")
 (seg / "list.txt").write_text("\n".join(lst) + "\n")
-final = D / "When Do AI Graders Collude - presentation.mp4"
+final = D / "Collusion Needs Power, Not Privacy - presentation.mp4"
 subprocess.run([FF, "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(seg / "list.txt"), "-c", "copy",
                 str(final)], check=True)
 print(final, final.stat().st_size)

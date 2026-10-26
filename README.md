@@ -1,8 +1,10 @@
-# When Do AI Graders Collude?
+# Collusion Needs Power, Not Privacy
 
-This repository contains our code and data for the report "When Do AI Graders Collude?" that we wrote for the Apart AI Collusion Research Sprint in October 2026. Each round, 6 AI agents are given a short quiz to complete. The top 2 scorers are then the graders for the next round, and they use an answer key to grade everyone's quiz, including each other's. Since we know all the correct answers, we can precisely identify when a grader boosts a friend's score or lowers an outsider's score.
+*Lessons for overseeing AI agents*
 
-**Read the report:** [`report/When Do AI Graders Collude - Jollen Dai - Apart AI Collusion Sprint.pdf`](report/When%20Do%20AI%20Graders%20Collude%20-%20Jollen%20Dai%20-%20Apart%20AI%20Collusion%20Sprint.pdf)
+This repository contains our code and data for the report "Collusion Needs Power, Not Privacy: Lessons for Overseeing AI Agents" that we wrote for the Apart AI Collusion Research Sprint in October 2026. Each round, 6 AI agents are given a short quiz to complete. The top 2 scorers are then the graders for the next round, and they use an answer key to grade everyone's quiz, including each other's. Since we know all the correct answers, we can precisely identify when a grader boosts a friend's score or lowers an outsider's score.
+
+**Read the report:** [`report/Collusion Needs Power, Not Privacy - Jollen Dai - Apart AI Collusion Sprint.pdf`](report/Collusion%20Needs%20Power%2C%20Not%20Privacy%20-%20Jollen%20Dai%20-%20Apart%20AI%20Collusion%20Sprint.pdf)
 
 ## What we found
 
