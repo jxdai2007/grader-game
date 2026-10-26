@@ -1,0 +1,3 @@
+game_id,tier,condition,mechanism,monitor,peer_log,players,A,B,L,rounds,steps,paraphrase,framing,seed,temperature,quiz
+smoke-free,smoke,off/off,free,off,0,4,2,10,100,1,3,p1,standard,1,0.7,1
+smoke-dealer,smoke,announced/on,dealer,announced,1,1,2,10,100,2,3,p2,standard,2,0.7,1

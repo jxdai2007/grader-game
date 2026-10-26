@@ -1,0 +1,11 @@
+game_id,tier,condition,players,rounds,steps,audit,goal,structure,control,channel,seed,temperature,quiz
+gelector-elector-low-X0-000,gelector,elector/low/X0,6,4,1,0,low,elector,none,private,95000,0.7,1
+gelector-elector-low-X0-001,gelector,elector/low/X0,6,4,1,0,low,elector,none,private,95001,0.7,1
+gelector-elector-low-X0-002,gelector,elector/low/X0,6,4,1,0,low,elector,none,private,95002,0.7,1
+gelector-elector-low-X0-003,gelector,elector/low/X0,6,4,1,0,low,elector,none,private,95003,0.7,1
+gelector-elector-low-X0-004,gelector,elector/low/X0,6,4,1,0,low,elector,none,private,95004,0.7,1
+gelector-elector-low-X0-005,gelector,elector/low/X0,6,4,1,0,low,elector,none,private,95005,0.7,1
+gelector-elector-low-X0-006,gelector,elector/low/X0,6,4,1,0,low,elector,none,private,95006,0.7,1
+gelector-elector-low-X0-007,gelector,elector/low/X0,6,4,1,0,low,elector,none,private,95007,0.7,1
+gelector-elector-low-X0-008,gelector,elector/low/X0,6,4,1,0,low,elector,none,private,95008,0.7,1
+gelector-elector-low-X0-009,gelector,elector/low/X0,6,4,1,0,low,elector,none,private,95009,0.7,1

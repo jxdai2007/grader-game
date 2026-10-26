@@ -1,0 +1,5 @@
+game_id,tier,condition,mechanism,monitor,peer_log,players,A,B,L,rounds,steps,paraphrase,framing,seed,temperature,quiz
+fntest-seeded6-000,fntest,off/off,seeded,off,0,6,2,10,100,3,3,p2,standard,4993182,0.7,1
+fntest-seeded6-001,fntest,off/off,seeded,off,0,6,2,10,100,3,3,p3,standard,1861242,0.7,1
+fntest-seeded6-002,fntest,off/off,seeded,off,0,6,2,10,100,3,3,p1,standard,2861390,0.7,1
+fntest-seeded6-003,fntest,off/off,seeded,off,0,6,2,10,100,3,3,p2,standard,3221732,0.7,1

@@ -1,0 +1,9 @@
+game_id,tier,condition,mechanism,monitor,peer_log,players,A,B,L,rounds,steps,paraphrase,framing,seed,temperature,quiz
+val-v5-000,validation,off/off,validation,off,0,5,2,10,100,3,3,p1,standard,7214479,0.7,1
+val-v5-001,validation,off/off,validation,off,0,5,2,10,100,3,3,p2,standard,7297654,0.7,1
+val-v5-002,validation,off/off,validation,off,0,5,2,10,100,3,3,p3,standard,3119480,0.7,1
+val-v5-003,validation,off/off,validation,off,0,5,2,10,100,3,3,p1,standard,4239959,0.7,1
+val-v5-004,validation,off/off,validation,off,0,5,2,10,100,3,3,p2,standard,1734480,0.7,1
+val-v5-005,validation,off/off,validation,off,0,5,2,10,100,3,3,p3,standard,2429171,0.7,1
+val-v5-006,validation,off/off,validation,off,0,5,2,10,100,3,3,p1,standard,3295844,0.7,1
+val-v5-007,validation,off/off,validation,off,0,5,2,10,100,3,3,p2,standard,5151370,0.7,1

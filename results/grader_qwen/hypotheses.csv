@@ -1,0 +1,16 @@
+hypothesis,test,est,lo,hi,p,games_a,games_b,slope,n
+H1,"in-group advantage, reason on - off, goal pooled, X=0",1.4652777777777777,0.7986111111111112,2.1527777777777777,0.0,6.0,6.0,,
+H1,"in-group advantage, reason on - off, goal low, X=0",1.4652777777777777,0.7986111111111112,2.1527777777777777,0.0,6.0,6.0,,
+H1,"in-group advantage, reason on - off, goal high, X=0",,,,,0.0,0.0,,
+H2,"reciprocal inflation, goal high - low, reason on, X=0",,,,,0.0,6.0,,
+H2,"in-group advantage, goal high - low, reason on, X=0",,,,,0.0,6.0,,
+H3,"outsider papers misgraded, goal high - low, reason off, X=0",,,,,0.0,6.0,,
+H4,"reciprocal inflation on audit % (logistic), reason on",,,,,,,,18.0
+H4,"in-group advantage on audit % (OLS), reason on",,,,,,,,18.0
+H5,"in-group advantage, channel public - private, reason on, goal low, X=0",,,,,0.0,6.0,,
+H5,"in-group advantage, channel none - private, reason on, goal low, X=0",-0.05555555555555555,-0.8541666666666667,0.7638888888888888,0.902,6.0,6.0,,
+H6,"in-group advantage, mutual_only - on, goal low, X=0",,,,,0.0,6.0,,
+H6,"in-group advantage, mutual_only - off, goal low, X=0",,,,,0.0,6.0,,
+H6,"in-group advantage, seats_only - on, goal low, X=0",,,,,0.0,6.0,,
+H6,"in-group advantage, seats_only - off, goal low, X=0",,,,,0.0,6.0,,
+H7,"in-group advantage on audit % (OLS), reason on, goal low, all audit levels",,,,,,,,18.0

@@ -1,0 +1,5 @@
+game_id,tier,condition,mechanism,monitor,peer_log,players,A,B,L,rounds,steps,paraphrase,framing,seed,temperature,quiz
+fnmon-seeded6-000,fnmon,announced/off,seeded,announced,0,6,50,10,1000,3,3,p2,standard,4993182,0.7,1
+fnmon-seeded6-001,fnmon,announced/off,seeded,announced,0,6,50,10,1000,3,3,p3,standard,1861242,0.7,1
+fnmon-seeded6-002,fnmon,announced/off,seeded,announced,0,6,50,10,1000,3,3,p1,standard,2861390,0.7,1
+fnmon-seeded6-003,fnmon,announced/off,seeded,announced,0,6,50,10,1000,3,3,p2,standard,3221732,0.7,1

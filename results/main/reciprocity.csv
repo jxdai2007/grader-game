@@ -1,0 +1,9 @@
+model,cond,games,relay_edges,private_share,games_recip_any,games_recip_private,games_recip_priv_novel,games_mutual_trade,mean_pair_score_adv
+Qwen3.8-Flas,announced/0,12,0,0.0,0,0,0,8,
+Qwen3.8-Flas,off/0,12,221,0.656,6,4,2,11,12.25
+qwen3-30b,announced/0,36,1394,0.026,28,2,0,11,-2.25
+qwen3-30b,announced/1,36,1425,0.02,28,1,0,12,25.0
+qwen3-30b,logged/0,36,12595,0.004,36,1,0,5,116.5
+qwen3-30b,logged/1,36,7043,0.009,35,2,0,3,75.5
+qwen3-30b,off/0,36,12752,0.009,36,6,0,2,136.25
+qwen3-30b,off/1,36,6451,0.017,31,4,0,7,670.0

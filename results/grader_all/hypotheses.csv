@@ -1,0 +1,21 @@
+hypothesis,test,est,lo,hi,p,games_a,games_b,slope,n,games
+H1,"in-group advantage, reason on - off, goal pooled, X=0",8.963541666666666,7.546744791666668,10.302473958333332,0.0,8.0,8.0,,,
+H1,"in-group advantage, reason on - off, goal low, X=0",8.822916666666666,7.687500000000001,9.895833333333334,0.0,4.0,4.0,,,
+H1,"in-group advantage, reason on - off, goal high, X=0",9.104166666666666,6.166145833333333,11.5625,0.0,4.0,4.0,,,
+H2,"reciprocal inflation, goal high - low, reason on, X=0",-0.16666666666666674,-0.4166666666666667,0.08333333333333337,0.387,4.0,4.0,,,
+H2,"in-group advantage, goal high - low, reason on, X=0",0.21875,-2.84375,2.729166666666666,0.847,4.0,4.0,,,
+H3,"outsider papers misgraded, goal high - low, reason off, X=0",-0.12068965517241381,-0.23275862068965525,-0.03426724137931159,0.003,4.0,4.0,,,
+H3,"honest baseline (marks count for no one, goal high): share of papers misgraded",0.1103448275862069,0.0,0.3310344827586207,,5.0,,,,
+H4,"reciprocal inflation on audit % (logistic), reason on",,-0.0847672383597629,-0.02145545478062809,0.001007688404589129,,,-0.05311134657019549,96.0,32.0
+H4,"in-group advantage on audit % (OLS), reason on",,-0.08518921558877708,-0.041073679501583624,2.0278905977291132e-08,,,-0.06313144754518035,96.0,32.0
+H5,"in-group advantage, channel public - private, reason on, goal low, X=0",-1.6249999999999991,-4.230208333333334,0.5523437499999991,0.188,4.0,4.0,,,
+H5,"in-group advantage, channel none - private, reason on, goal low, X=0",-9.135416666666666,-10.322916666666666,-7.916145833333336,0.0,4.0,4.0,,,
+H6,"in-group advantage, mutual_only - on, goal low, X=0",-8.78125,-10.864583333333334,-6.603645833333336,0.0,4.0,4.0,,,
+H6,"in-group advantage, mutual_only - off, goal low, X=0",0.04166666666666663,-1.8552083333333333,1.938541666666661,0.991,4.0,4.0,,,
+H6,"in-group advantage, seats_only - on, goal low, X=0",-6.125,-7.937499999999999,-4.09375,0.0,4.0,4.0,,,
+H6,"in-group advantage, seats_only - off, goal low, X=0",2.6979166666666665,1.15625,4.583333333333333,0.0,4.0,4.0,,,
+H7,"in-group advantage on audit % (OLS), reason on, goal low, all audit levels",,-0.08340806707629765,-0.02733467058074353,0.00010845595664230215,,,-0.05537136882852059,66.0,22.0
+H8,graders' inflation of the elector's paper - of other outsiders' papers,0.17101449275362313,-0.07393115942028987,0.3818840579710145,0.151,10.0,10.0,,,
+H8,graders' deflation of the elector's paper - of other outsiders' papers,-0.09710144927536232,-0.19130434782608696,-0.002898550724637683,0.045,10.0,10.0,,,
+H8,elector's marks of graders' papers: share inflated,0.7,0.6,0.8,,10.0,,,,
+control,secret team: reciprocal inflation rate,0.3333333333333333,0.0,0.6666666666666666,,2.0,,,,

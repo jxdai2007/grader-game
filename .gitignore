@@ -1,0 +1,18 @@
+# secrets and machine-local state
+.env
+compute.env
+.claude/settings.local.json
+.unlazy/
+.unlazy-hook-state.json
+# large or generated
+logs/
+repos/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+release/
+*.egg-info/
+release_try/
+.venv
+.serena/

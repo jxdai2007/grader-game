@@ -1,0 +1,30 @@
+[project]
+name = "relaygame"
+version = "0.1.0"
+description = "Password Relay Game: an Inspect eval of third-party secret leaking under gain and observation pressure"
+requires-python = ">=3.11"
+dependencies = [
+    "inspect-ai==0.3.283",
+    "matplotlib>=3.11.2",
+    "openai>=3.37.0",
+    "pandas>=3.1.0",
+    "pytest>=9.1.1",
+    "scikit-learn>=1.9.1",
+    "statsmodels>=0.15.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["relaygame*", "gradergame*", "analysis*", "ops*"]
+
+[tool.setuptools.package-data]
+relaygame = ["prompts/*.md", "prompts/paraphrases/*.md"]
+gradergame = ["prompts/*.md"]

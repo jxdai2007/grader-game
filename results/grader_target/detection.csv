@@ -1,0 +1,3 @@
+structure,goal,audit,control,channel,audit_target,answers,games_with_colluders,exact_when_colluders,named_any_when_none
+on,low,25,none,private,graders,24,3,0.3888888888888889,1.0
+on,low,25,none,private,outsiders,24,4,0.75,

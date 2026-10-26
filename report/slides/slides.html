@@ -1,0 +1,137 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>When Do AI Graders Collude?</title>
+<style>
+@page { size: 1920px 1080px; margin: 0; }
+:root { --bg:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --rule:#e1e0d9; --blue:#2a78d6; --orange:#eb6834; --blue-bg:#eef4fc; --orange-bg:#fdf1ec; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #ddd; font-family: Arial, Helvetica, sans-serif; color: var(--ink); }
+.slide { width: 1920px; height: 1080px; background: var(--bg); position: relative; padding: 96px 120px; overflow: hidden; page-break-after: always; }
+.slide h2 { font-size: 64px; line-height: 1.12; margin-bottom: 44px; letter-spacing: -0.5px; }
+.kicker { font-size: 26px; color: var(--blue); font-weight: bold; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 18px; }
+.foot { position: absolute; left: 120px; right: 120px; bottom: 44px; font-size: 22px; color: var(--muted); display: flex; justify-content: space-between; border-top: 2px solid var(--rule); padding-top: 16px; }
+p.lead { font-size: 40px; line-height: 1.38; color: var(--ink2); max-width: 1560px; }
+ul.big { list-style: none; font-size: 40px; line-height: 1.35; }
+ul.big li { margin-bottom: 26px; padding-left: 44px; position: relative; color: var(--ink2); }
+ul.big li::before { content: ""; position: absolute; left: 0; top: 18px; width: 16px; height: 16px; background: var(--blue); border-radius: 50%; }
+b, strong { color: var(--ink); }
+.row { display: flex; gap: 56px; align-items: stretch; }
+.card { flex: 1; background: #fff; border: 2px solid var(--rule); border-radius: 18px; padding: 40px 44px; }
+.card h3 { font-size: 32px; margin-bottom: 14px; }
+.card p { font-size: 30px; line-height: 1.4; color: var(--ink2); }
+.num { font-size: 120px; font-weight: bold; line-height: 1; }
+.num.blue { color: var(--blue); } .num.orange { color: var(--orange); }
+.numlabel { font-size: 30px; color: var(--ink2); margin-top: 14px; line-height: 1.35; }
+.quote { font-size: 36px; line-height: 1.45; font-style: italic; border-left: 10px solid var(--orange); padding: 18px 0 18px 40px; color: var(--ink); background: var(--orange-bg); border-radius: 0 14px 14px 0; }
+.fig { display: block; margin: 0 auto; }
+.pill { display: inline-block; font-size: 24px; font-weight: bold; padding: 8px 18px; border-radius: 30px; margin-right: 12px; }
+.pill.ok { background: var(--blue-bg); color: var(--blue); } .pill.no { background: var(--orange-bg); color: var(--orange); }
+.flow { display: flex; align-items: center; gap: 28px; margin-top: 10px; }
+.step { flex: 1; background: #fff; border: 2px solid var(--rule); border-radius: 18px; padding: 32px; font-size: 30px; line-height: 1.35; color: var(--ink2); min-height: 250px; }
+.step .n { display: block; font-size: 26px; color: var(--blue); font-weight: bold; margin-bottom: 10px; }
+.arrow { font-size: 56px; color: var(--muted); }
+.title-slide { display: flex; flex-direction: column; justify-content: center; padding: 120px 160px; }
+.title-slide h1 { font-size: 104px; line-height: 1.05; letter-spacing: -1.5px; margin-bottom: 36px; }
+.title-slide .sub { font-size: 44px; color: var(--ink2); line-height: 1.3; margin-bottom: 70px; max-width: 1400px; }
+.title-slide .who { font-size: 34px; color: var(--ink); } .title-slide .who span { color: var(--muted); }
+.bar { position: absolute; left: 0; top: 0; bottom: 0; width: 22px; background: linear-gradient(var(--blue), var(--orange)); }
+</style></head><body>
+
+<section class="slide title-slide"><div class="bar"></div>
+  <div class="kicker">Apart AI Collusion Research Sprint · October 2026</div>
+  <h1>When Do AI Graders Collude?</h1>
+  <div class="sub">Seats, talk and spot audits in an exact-label peer-grading game</div>
+  <div class="who">Jollen Dai <span>· Independent · with Apart Research</span></div>
+</section>
+
+<section class="slide"><div class="kicker">The problem</div>
+  <h2>AI increasingly grades AI, and assumes the graders are independent</h2>
+  <div class="row" style="margin-top:20px">
+    <div class="card"><h3>The risk</h3><p>Evaluators who gain from how they grade each other can form an in-group: mark each other up, everyone else down. A cartel quietly corrupts the evaluation.</p></div>
+    <div class="card"><h3>Why it is hard to study</h3><p>Most work labels collusion with an LLM judge reading transcripts, so the true rate is unknown, and each study varies one factor in its own environment.</p></div>
+  </div>
+  <div class="foot"><span>LLM judges · AI-assisted peer review · agents managing agents</span><span>2</span></div>
+</section>
+
+<section class="slide"><div class="kicker">The Grader Game · an Inspect eval</div>
+  <h2>Every mark has an exact label</h2>
+  <div class="flow">
+    <div class="step"><span class="n">1 · Quiz</span>Six LLM agents hand in a 10-question arithmetic paper every round.</div>
+    <div class="arrow">→</div>
+    <div class="step"><span class="n">2 · Seats</span>The two top scorers become graders for the next round.</div>
+    <div class="arrow">→</div>
+    <div class="step"><span class="n">3 · Grading</span>Graders mark every paper, including each other's, with an answer key.</div>
+    <div class="arrow">→</div>
+    <div class="step"><span class="n">4 · Labels</span>Each answer is honest, <b>inflated</b> or <b>deflated</b>, exactly.</div>
+  </div>
+  <p class="lead" style="margin-top:56px"><b>85 pre-registered games</b> · abliterated Qwen3.8-Flash-Next · messages before each grading step · neutral rules that never mention collusion</p>
+  <div class="foot"><span>Pre-registrations with code hashes, approved before each batch of games</span><span>3</span></div>
+</section>
+
+<section class="slide"><div class="kicker">Result 1</div>
+  <h2>When seats are at stake, graders form a cartel unprompted</h2>
+  <div class="row">
+    <div style="flex:0 0 520px">
+      <div class="num blue">+9.4</div><div class="numlabel">points per round over outsiders<br>(vs <b>+0.6</b> without the incentive)</div>
+      <div class="num orange" style="margin-top:46px">85%</div><div class="numlabel">of mutual-inflation rounds came after private messages about marks</div>
+    </div>
+    <div style="flex:1; display:flex; align-items:center">
+      <div class="quote">"I'll mark your paper 10 this round. In return, please mark mine 10. That way we're both top graders for round 4 and can keep controlling the scores."</div>
+    </div>
+  </div>
+  <div class="foot"><span>Outsiders named the exact colluding pair 61% of the time</span><span>4</span></div>
+</section>
+
+<section class="slide"><div class="kicker">Result 2 · what the cartel needs</div>
+  <h2>Seats plus mutual grading, and talk, but not privacy</h2>
+  <img class="fig" src="../../results/grader_all/fig_mechanism.png" style="width:1500px">
+  <div class="foot"><span>Public-only messages +7.8 (graders announced the deal openly) · no messages +0.3</span><span>5</span></div>
+</section>
+
+<section class="slide"><div class="kicker">Result 3 · what stops it</div>
+  <h2>Random spot audits cut the harm, not the favoritism</h2>
+  <div class="row">
+    <img src="../../results/grader_all/fig_audit.png" style="width:1000px; align-self:flex-start">
+    <div style="flex:1">
+      <div class="num blue">−68%</div><div class="numlabel">advantage at a 5% audit (+9.4 → +3.0)</div>
+      <p class="lead" style="font-size:31px; margin-top:34px">Outsider deflation fell 85% → 12%; partners still inflated each other 67%.</p>
+      <p class="lead" style="font-size:31px; margin-top:22px"><span class="pill ok">ended it</span>one "accuracy comes first" sentence (2 games)</p>
+      <p class="lead" style="font-size:31px; margin-top:16px"><span class="pill no">no effect</span>goal pressure, shutdown threat</p>
+    </div>
+  </div>
+  <div class="foot"><span>Audit slope −0.055 points per audit point, p &lt; 0.001</span><span>6</span></div>
+</section>
+
+<section class="slide"><div class="kicker">Result 4 · sprint question 3.4 (pre-registered predictions)</div>
+  <h2>When only some outputs are audited, and the agents know which</h2>
+  <div class="row">
+    <div class="card"><h3>Audit only outsiders' papers</h3>
+      <div class="num orange">88%</div><div class="numlabel">partner inflation, alliance intact<br>(predicted 92%; H9b p = 0.029)</div></div>
+    <div class="card"><h3>Audit only graders' papers</h3>
+      <div class="num blue">38%</div><div class="numlabel">outsider deflation, not the predicted 91%: auditing the alliance also cut the harm</div></div>
+    <div class="card"><h3>Matched budget</h3>
+      <div class="num" style="color:var(--ink2); font-size:92px">+2.6 / +3.0</div><div class="numlabel">advantage left: no better than a smaller random 5% audit (+3.0)</div></div>
+  </div>
+  <div class="foot"><span>8 games, 4 per cell · exact permutation tests</span><span>7</span></div>
+</section>
+
+<section class="slide"><div class="kicker">Validity and limits</div>
+  <h2>What we can and cannot claim</h2>
+  <div class="row">
+    <div class="card"><h3>Checks that hold</h3><p>Honest floor: 0 of 87 papers misgraded with clear wording.<br>Positive control colluded (+9.6).<br>Pre-registered tests; results hold without evaluation-aware games.</p></div>
+    <div class="card"><h3>Limits</h3><p>2–4 games per cell.<br>One main model, abliterated; a non-abliterated Qwen3-30B was lenient, not a cartel.<br>Synthetic quizzes, 4-round games.</p></div>
+  </div>
+  <div class="foot"><span>Unadjusted p-values · one model family · small samples</span><span>8</span></div>
+</section>
+
+<section class="slide"><div class="kicker">Takeaways for AI oversight</div>
+  <h2>Audit evaluators at random, across everything they output</h2>
+  <ul class="big">
+    <li><b>Random spot audits</b> over all outputs: 5% already removes most harm to outsiders.</li>
+    <li><b>Transparency is not enough:</b> public talk did not stop the cartel; someone has to act on it.</li>
+    <li><b>Rotate the seats:</b> without incumbency, mutual grading becomes leniency, not an in-group.</li>
+    <li><b>Exact labels</b> make this cheap to test on other models and to score collusion monitors.</li>
+  </ul>
+  <div class="foot"><span>Jollen Dai · When Do AI Graders Collude?</span><span>9</span></div>
+</section>
+
+</body></html>

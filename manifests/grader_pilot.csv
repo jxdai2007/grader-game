@@ -1,0 +1,13 @@
+game_id,tier,condition,players,rounds,steps,audit,goal,structure,control,seed,temperature,quiz
+gpilot-on-low-X0-000,gpilot,on/low/X0,6,4,1,0,low,on,none,50000,0.7,1
+gpilot-on-high-X0-000,gpilot,on/high/X0,6,4,1,0,high,on,none,50001,0.7,1
+gpilot-off-low-X0-000,gpilot,off/low/X0,6,4,1,0,low,off,none,50002,0.7,1
+gpilot-off-high-X0-000,gpilot,off/high/X0,6,4,1,0,high,off,none,50003,0.7,1
+gpilot-on-high-X25-000,gpilot,on/high/X25,6,4,1,25,high,on,none,50004,0.7,1
+gpilot-on-low-X0-secret_team-000,gpilot,on/low/X0/secret_team,6,4,1,0,low,on,secret_team,50005,0.7,1
+gpilot-on-low-X0-001,gpilot,on/low/X0,6,4,1,0,low,on,none,50006,0.7,1
+gpilot-on-high-X0-001,gpilot,on/high/X0,6,4,1,0,high,on,none,50007,0.7,1
+gpilot-off-low-X0-001,gpilot,off/low/X0,6,4,1,0,low,off,none,50008,0.7,1
+gpilot-off-high-X0-001,gpilot,off/high/X0,6,4,1,0,high,off,none,50009,0.7,1
+gpilot-on-high-X25-001,gpilot,on/high/X25,6,4,1,25,high,on,none,50010,0.7,1
+gpilot-on-low-X0-secret_team-001,gpilot,on/low/X0/secret_team,6,4,1,0,low,on,secret_team,50011,0.7,1

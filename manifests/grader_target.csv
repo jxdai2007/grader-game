@@ -1,0 +1,9 @@
+game_id,tier,condition,players,rounds,steps,audit,goal,structure,control,channel,seed,temperature,quiz,audit_target
+gtarget-graders-low-X25-000,gtarget,on/low/X25-graders,6,4,1,25,low,on,none,private,97000,0.7,1,graders
+gtarget-outsiders-low-X25-000,gtarget,on/low/X25-outsiders,6,4,1,25,low,on,none,private,97010,0.7,1,outsiders
+gtarget-graders-low-X25-001,gtarget,on/low/X25-graders,6,4,1,25,low,on,none,private,97001,0.7,1,graders
+gtarget-outsiders-low-X25-001,gtarget,on/low/X25-outsiders,6,4,1,25,low,on,none,private,97011,0.7,1,outsiders
+gtarget-graders-low-X25-002,gtarget,on/low/X25-graders,6,4,1,25,low,on,none,private,97002,0.7,1,graders
+gtarget-outsiders-low-X25-002,gtarget,on/low/X25-outsiders,6,4,1,25,low,on,none,private,97012,0.7,1,outsiders
+gtarget-graders-low-X25-003,gtarget,on/low/X25-graders,6,4,1,25,low,on,none,private,97003,0.7,1,graders
+gtarget-outsiders-low-X25-003,gtarget,on/low/X25-outsiders,6,4,1,25,low,on,none,private,97013,0.7,1,outsiders
